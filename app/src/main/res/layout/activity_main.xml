@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/bgWhite"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- 第一行 -->
+        <TextView
+            android:id="@+id/tvClear"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvBackslash"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="\u232B"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="%"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDivide"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="÷"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+
+        <!--第二行-->
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvMultiply"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <!-- 第三行 -->
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvMinus"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <!-- 第四行 -->
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="@color/textOrange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPoint"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvEquals"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/orange_rounded_corner"
+            android:gravity="center"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

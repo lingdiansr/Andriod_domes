@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="default_context">请输入算式</string>
+</resources>
